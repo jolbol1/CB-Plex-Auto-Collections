@@ -1,5 +1,5 @@
 #!/bin/bash
-docker run -it \
+docker run --rm -it \
 --name=plex-auto-collections  \
 -e PGID=1001 -e PUID=1000  \
 --label com.github.cloudbox.cloudbox_managed=true \
