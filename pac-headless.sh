@@ -1,6 +1,6 @@
 #!/bin/bash
 docker run -d --rm \
---name=plex-auto-collections  \
+--name=$2  \
 -e PGID=1001 -e PUID=1000  \
 --label com.github.cloudbox.cloudbox_managed=true \
 --network=cloudbox  \
